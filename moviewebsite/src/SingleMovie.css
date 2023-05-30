@@ -1,0 +1,309 @@
+
+.loading-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.single-movie-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-movie-card {
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.image {
+    height: 50vh;
+    grid-column: 1/2;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    grid-template-columns: 2/3;
+    padding: 1rem 2rem;
+}
+
+.Back-btn {
+    width: 16vw;
+    height: fit-content;
+    font-size: 2rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(5, 121, 121);
+    border-color: rgb(5, 121, 121);
+    transition: all 0.2s ease 0.1s;
+}
+
+.Back-btn:hover{
+    background-color: rgb(5, 121, 121);
+    color: white;
+    transform: scale(1.1);
+}
+
+.movie-title{
+    font-size: 4rem;
+}
+
+.Released-date{
+    font-size: 2.5rem;
+}
+
+.country{
+    font-size: 2.5rem;
+}
+
+.plot{
+    font-size: 1.6rem;
+}
+
+.genre{
+    font-size: 2rem;
+}
+
+.language{
+    font-size: 2rem;
+}
+
+.rating{
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width:767.8px){
+    .loading-container{
+        font-size: 3rem;
+    }
+    .single-movie-card{
+        height: 90vh;
+        width: 90vw;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+    .image{
+        height: 35vh;
+        width: 90vw;
+        grid-row: 1/2;
+    }
+    .image img{
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .content{
+        grid-row: 2/3;
+        padding: 10px 5px;
+    }
+    .Back-btn {
+        width: 40vw;
+        font-size: 1.1rem;
+    }
+
+    .movie-title{
+        font-size: 2rem;
+    }
+    
+    .Released-date{
+        font-size: 1.2rem;
+    }
+    
+    .country{
+        font-size: 1.2rem;
+    }
+    
+    .plot{
+        font-size: 1.2rem;
+    }
+    
+    .genre{
+        font-size: 1.3rem;
+    }
+    
+    .language{
+        font-size: 1.3rem;
+    }
+    
+    .rating{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023.8px){
+    .loading-container{
+        font-size: 4rem;
+    }
+    .single-movie-card{
+        width: 80vw;
+    }
+    .Back-btn {
+        width: 16vw;
+        font-size: 1.4rem;
+    }
+
+    .movie-title{
+        font-size: 2rem;
+    }
+    
+    .Released-date{
+        font-size: 1.2rem;
+    }
+    
+    .country{
+        font-size: 1.2rem;
+    }
+    
+    .plot{
+        font-size: 1.2rem;
+    }
+    
+    .genre{
+        font-size: 1.3rem;
+    }
+    
+    .language{
+        font-size: 1.3rem;
+    }
+    
+    .rating{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1439.8px){
+    .single-movie-card{
+        height: 40vh;
+    }
+    .image{
+        height: 40vh;
+    }
+    .Back-btn {
+        width: 14vw;
+        font-size: 1.4rem;
+    }
+    .movie-title{
+        font-size: 2rem;
+    }
+    .Released-date{
+        font-size: 1.4rem;
+    }
+    .country{
+        font-size: 1.4rem;
+    }
+    .plot{
+        font-size: 1.2rem;
+    }
+    .genre{
+        font-size: 1.4rem;
+    }
+    .language{
+        font-size: 1.4rem;
+    }
+    .rating{
+        font-size: 1.8rem;
+    }  
+}
+
+@media  screen and (min-width:1440px) and (max-width:2559.8px) {
+    .Back-btn {
+        width: 16vw;
+        font-size: 2.2rem;
+    }
+    
+    .Back-btn:hover{
+        background-color: rgb(5, 121, 121);
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    .movie-title{
+        font-size: 4rem;
+    }
+    
+    .Released-date{
+        font-size: 2.5rem;
+    }
+    
+    .country{
+        font-size: 2.5rem;
+    }
+    
+    .plot{
+        font-size: 1.6rem;
+    }
+    
+    .genre{
+        font-size: 2.1rem;
+    }
+    
+    .language{
+        font-size: 2.1rem;
+    }
+    
+    .rating{
+        font-size: 2.3rem;
+    }
+    
+}
+
+@media screen and (min-width:2560px) {
+    .Back-btn {
+        width: 18vw;
+        font-size: 2.5rem;
+    }
+    
+    .Back-btn:hover{
+        background-color: rgb(5, 121, 121);
+        color: white;
+        transform: scale(1.1);
+    }
+    
+    .movie-title{
+        font-size: 5rem;
+    }
+    
+    .Released-date{
+        font-size: 3rem;
+    }
+    
+    .country{
+        font-size: 3rem;
+    }
+    
+    .plot{
+        font-size: 2rem;
+    }
+    
+    .genre{
+        font-size: 2.5rem;
+    }
+    
+    .language{
+        font-size: 2.5rem;
+    }
+    
+    .rating{
+        font-size: 2.7rem;
+    }
+        
+}

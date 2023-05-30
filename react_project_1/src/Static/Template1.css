@@ -1,0 +1,143 @@
+.t-line {
+    font-size: 3.8rem;
+}
+
+.brand-name {
+    font-size: 4.5rem;
+    color: #22bdb8;
+    animation: myAnim2 3s ease 1s 1 normal forwards;
+}
+
+.t-line-2 {
+    font-size: 1.5rem;
+}
+
+.btn-get-started {
+    text-decoration-line: none;
+    color: #22bdb8;
+    background-color: white;
+    border: 2px solid #22bdb8;
+    padding: 12px 50px;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    transition: all 0.5s 0s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #1f9490;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.img-set {
+    animation: myAnim 10s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+@keyframes myAnim2 {
+    0% {
+        transform: scale(2);
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .t-line {
+        font-size: 2.5rem;
+    }
+
+    .brand-name {
+        font-size: 3.2rem;
+    }
+
+    .t-line-2 {
+        font-size: 1rem;
+    }
+
+    .btn-get-started {
+        font-size: 0.8rem;
+    }
+
+    .btn-get-started:hover {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:427px){
+    .t-line {
+        font-size: 2.6rem;
+    }
+
+    .brand-name {
+        font-size: 3.2rem;
+    }
+
+    .t-line-2 {
+        font-size: 1.3rem;
+    }
+
+    .btn-get-started {
+        font-size: 1.2rem;
+    }
+
+    .btn-get-started:hover {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:2560px){
+    .t-line {
+        font-size: 4.5rem;
+    }
+
+    .brand-name {
+        font-size: 6rem;
+    }
+
+    .t-line-2 {
+        font-size: 3rem;
+    }
+
+    .btn-get-started {
+        font-size: 2rem;
+    }
+
+    .btn-get-started:hover {
+        font-size: 2.3rem;
+    }
+}
